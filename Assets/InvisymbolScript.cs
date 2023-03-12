@@ -12,6 +12,7 @@ public class InvisymbolScript : MonoBehaviour {
     public KMBombInfo Bomb;
     public KMAudio Audio;
     public KMBombModule Module;
+    public KMRuleSeedable Ruleseed;
 
     public SpriteMask[] masks;
     public SpriteRenderer innerSymbol;
@@ -37,11 +38,20 @@ public class InvisymbolScript : MonoBehaviour {
 
     void Start ()
     {
+        SetTable();
         GetPositions();
         GenerateSymbols();
         ShowSymbol();
     }
-
+    void SetTable()
+    {
+        var rnd = Ruleseed.GetRNG();
+        if (rnd.Seed != 1)
+            Log("Using rule seed " + rnd.Seed);
+        for (int i = 0; i < 16; i++)
+            rnd.Next();
+        rnd.ShuffleFisherYates(displaySymbols);
+    }
     void GetPositions()
     {
         adjPositions.Add(Rnd.Range(0, 25));

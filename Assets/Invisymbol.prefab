@@ -333,6 +333,7 @@ GameObject:
   - component: {fileID: 114281390364058088}
   - component: {fileID: 114279465920798390}
   - component: {fileID: 114892033817734140}
+  - component: {fileID: 114471056986903276}
   - component: {fileID: 114305654539063736}
   - component: {fileID: 114859777350077246}
   m_Layer: 0
@@ -436,7 +437,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1037454415333352}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.575}
+  m_LocalPosition: {x: 0, y: 0, z: 2.555}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 4267005110819852}
@@ -533,13 +534,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1625149254137658}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0.01}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 4267005110819852}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!4 &4631462066486920
 Transform:
   m_ObjectHideFlags: 1
@@ -899,6 +900,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShaderNames:
   - Sprites/Default
+--- !u!114 &114471056986903276
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1994453389214464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adf69c2de51bd3c43bbd9bc22578ee08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _seed: 1
 --- !u!114 &114568089537267798
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1001,6 +1014,7 @@ MonoBehaviour:
   Bomb: {fileID: 114279465920798390}
   Audio: {fileID: 114281390364058088}
   Module: {fileID: 114892033817734140}
+  Ruleseed: {fileID: 114471056986903276}
   masks:
   - {fileID: 331370311018071112}
   - {fileID: 331240071236496440}
@@ -1014,37 +1028,51 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a78a08b6448afc9428ce4bc9058a8a56, type: 3}
   - {fileID: 21300000, guid: 6c5b2b9990e5e1849bee3b8fae1a57b4, type: 3}
   - {fileID: 21300000, guid: 2c2696bf486837f448fd6f6b8408a84c, type: 3}
+  - {fileID: 21300000, guid: f035386c23434ae4fb44fc663e226f1a, type: 3}
   - {fileID: 21300000, guid: e763514a3ebe96e4480a663d36aca4d7, type: 3}
   - {fileID: 21300000, guid: 262fc52a751875747bc4d19a55782810, type: 3}
   - {fileID: 21300000, guid: b3f66b6a11936dc4ea4be3466b1a60dd, type: 3}
+  - {fileID: 21300000, guid: 34be2cc0a69ff13428e84846362123a4, type: 3}
+  - {fileID: 21300000, guid: 1e536089083093740b22ff8a6afc5bce, type: 3}
   - {fileID: 21300000, guid: 2f896ce3353aecc48a176423f21676ca, type: 3}
   - {fileID: 21300000, guid: 664610d8bedca82429ddfbb0c60ee1f7, type: 3}
   displaySymbols:
-  - {fileID: 21300000, guid: d917e94c1c7d2a24cba65af5a299732a, type: 3}
-  - {fileID: 21300000, guid: 59465c12eca5a0549a1221e2ebfa8106, type: 3}
-  - {fileID: 21300000, guid: 2667d7de64a38ea468e774be9e4a45d8, type: 3}
-  - {fileID: 21300000, guid: ba20fa9fac666b246b4cbb4ae5c12034, type: 3}
-  - {fileID: 21300000, guid: 46e0673fe5101dd4ab38156d83815135, type: 3}
-  - {fileID: 21300000, guid: 6ae51ca730a7b09429f850c621027ef1, type: 3}
-  - {fileID: 21300000, guid: 71a061570e2c49845962ae9b33405537, type: 3}
-  - {fileID: 21300000, guid: 05322dd950d67a849b58d61816d113d4, type: 3}
-  - {fileID: 21300000, guid: 90009d31736370a498cf10bb048bc313, type: 3}
-  - {fileID: 21300000, guid: cee0998e6baa76c408651b0942ea6062, type: 3}
-  - {fileID: 21300000, guid: 16ef26f07c7b9bd42a3aa26fb89eb01e, type: 3}
-  - {fileID: 21300000, guid: 82a5f57616cb6dc468a07d186a8f3ad0, type: 3}
-  - {fileID: 21300000, guid: cc6a13bab56000842ab62ef943b3346e, type: 3}
-  - {fileID: 21300000, guid: 91cb9d767017e78429f0b79ef145f655, type: 3}
-  - {fileID: 21300000, guid: f5124581e71ff314eb4aa2a8c615c849, type: 3}
-  - {fileID: 21300000, guid: 83fa34ad7e097e84898be4388e474c1f, type: 3}
-  - {fileID: 21300000, guid: 9238e8635bb414c41b985e79b00b663b, type: 3}
-  - {fileID: 21300000, guid: 072174aeda3b0a240a2c7ff40528a9de, type: 3}
-  - {fileID: 21300000, guid: c2a0390cc46fa4840a01d348d4e489f4, type: 3}
-  - {fileID: 21300000, guid: c3208f6f52307b94f994e94e9a96c69d, type: 3}
-  - {fileID: 21300000, guid: 78fdd1223d229884ebfca55072c6bdc0, type: 3}
-  - {fileID: 21300000, guid: 6b066f3a9003ae8479497d21d15aa676, type: 3}
-  - {fileID: 21300000, guid: 2a8880eb5ae5c7b46be5fbbcfa471eb1, type: 3}
-  - {fileID: 21300000, guid: 10f45cc6fc9a1544aa39d52d909a5c22, type: 3}
-  - {fileID: 21300000, guid: ab98fe3acef938443adf16702f815796, type: 3}
+  - {fileID: 21300000, guid: 1baebe4599fd9e34192137482a6bd9dd, type: 3}
+  - {fileID: 21300000, guid: 2d892848ade1d6e4e884b17253c1fc4d, type: 3}
+  - {fileID: 21300000, guid: 5592c7d3eadfdf742bbbee5ab6632e19, type: 3}
+  - {fileID: 21300000, guid: 205e52fe41984f049b8b4dcd3963e5c2, type: 3}
+  - {fileID: 21300000, guid: fb8b541f07917fd4f9eba43a57ceac6e, type: 3}
+  - {fileID: 21300000, guid: 3909d957599fc6f4dba6739b6764804f, type: 3}
+  - {fileID: 21300000, guid: 67e860fa33314e34386a51d78a634058, type: 3}
+  - {fileID: 21300000, guid: a8990e2afe0939a4eb11f17609d2a8c9, type: 3}
+  - {fileID: 21300000, guid: 1e3b83a223937154caf7d74c1ecc0422, type: 3}
+  - {fileID: 21300000, guid: e055acd5329c2b34fa7d8c35bc6e4f96, type: 3}
+  - {fileID: 21300000, guid: e64067e13e6de5745857fea54794a4c5, type: 3}
+  - {fileID: 21300000, guid: c2cdbe099677a284ea075da2be6c4050, type: 3}
+  - {fileID: 21300000, guid: 9335d0c3aa8409e49be2f384efd9be30, type: 3}
+  - {fileID: 21300000, guid: 0f4f5be9be871934c820ef4540bdee5f, type: 3}
+  - {fileID: 21300000, guid: 17aab15bef2c4e049883cdf53866dd24, type: 3}
+  - {fileID: 21300000, guid: 3b34b72a5b744ea479516bec20f1e138, type: 3}
+  - {fileID: 21300000, guid: f23eee3c39300d141a51bb4fc8375963, type: 3}
+  - {fileID: 21300000, guid: 715920b6ff3121649ac0b69b93987a41, type: 3}
+  - {fileID: 21300000, guid: 63d3a4dcb5882364ebf850bb56c39639, type: 3}
+  - {fileID: 21300000, guid: a398b6f4ab0d7ca43b1d83353e53f2a1, type: 3}
+  - {fileID: 21300000, guid: 4be5dcbb2a45c9441b473037f9a39466, type: 3}
+  - {fileID: 21300000, guid: ca97e43abd0f46e458aec015c2e993af, type: 3}
+  - {fileID: 21300000, guid: 95004463ced06be44ba4fa7f2eb2c425, type: 3}
+  - {fileID: 21300000, guid: e43ec34ec8e09d64bb7697118f165deb, type: 3}
+  - {fileID: 21300000, guid: ac2dd38a2fbd85d4cb73ee78163918d7, type: 3}
+  - {fileID: 21300000, guid: b5e33b44de2b3a24b8e503a126284ac7, type: 3}
+  - {fileID: 21300000, guid: ff4e075647499ee44bd3641745583d93, type: 3}
+  - {fileID: 21300000, guid: 3fc1bc0021da7a949a43a0040c5a9dfd, type: 3}
+  - {fileID: 21300000, guid: 8fc4979bd889bfe40bf5428c2771dd74, type: 3}
+  - {fileID: 21300000, guid: 28843f0ddfa9ffd4081df562bab6aa23, type: 3}
+  - {fileID: 21300000, guid: 109242843984c464a94df235ddea8273, type: 3}
+  - {fileID: 21300000, guid: 7f5a36043e34e5e41857f64b9df8e161, type: 3}
+  - {fileID: 21300000, guid: 5437391cbf02fc74a98cc359c2ec940d, type: 3}
+  - {fileID: 21300000, guid: 671fce3844b5f8c49b92477753aa6cc2, type: 3}
+  - {fileID: 21300000, guid: be473f359c51fe544b01b4571f10832e, type: 3}
+  - {fileID: 21300000, guid: d66196163f9e31b42b00c66ff3e9910d, type: 3}
 --- !u!114 &114892033817734140
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1166,15 +1194,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: a78a08b6448afc9428ce4bc9058a8a56, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.56, y: 2.56}
+  m_Size: {x: 5.12, y: 5.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
 --- !u!212 &212246894722852508
 SpriteRenderer:
@@ -1306,7 +1334,7 @@ SpriteRenderer:
   m_Size: {x: 5.12, y: 5.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 2
 --- !u!212 &212715381027430056
 SpriteRenderer:
@@ -1342,15 +1370,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: a78a08b6448afc9428ce4bc9058a8a56, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.56, y: 2.56}
+  m_Size: {x: 5.12, y: 5.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
 --- !u!212 &212789555797794754
 SpriteRenderer:
@@ -1386,15 +1414,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: a78a08b6448afc9428ce4bc9058a8a56, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.56, y: 2.56}
+  m_Size: {x: 5.12, y: 5.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
 --- !u!212 &212794511421852722
 SpriteRenderer:
@@ -1430,15 +1458,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: a78a08b6448afc9428ce4bc9058a8a56, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.56, y: 2.56}
+  m_Size: {x: 5.12, y: 5.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
 --- !u!212 &212932505137196980
 SpriteRenderer:
@@ -1474,15 +1502,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: a78a08b6448afc9428ce4bc9058a8a56, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.56, y: 2.56}
+  m_Size: {x: 5.12, y: 5.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
 --- !u!331 &331240071236496440
 SpriteMask:

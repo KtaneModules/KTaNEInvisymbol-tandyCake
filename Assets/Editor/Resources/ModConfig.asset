@@ -13,15 +13,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: invisymbol
   title: Invisymbol
-  author: Danny7007
+  author: tandyCake
   description: '"Wh t do you me n you   n''t see i  ! Its  bvio !"
 
 
-    Module by Danny7007
+    Module by tandyCake
 
     moduleID: invisymbol
 
     Manual can be found at ktane.timwi.de'
-  version: 1.1.0
+  version: 2.0.0
   outputFolder: build
   previewImage: {fileID: 2800000, guid: 85b79d9c536828f448337b97e03ef1f2, type: 3}
